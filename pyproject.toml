@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "autoutils-log"
+version = "0.1.0"
+description = "Some Good Function For Log"
+authors = ["Reza Zeiny <rezazeiny1998@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rezazeiny/autoutils-log"
+repository = "https://github.com/rezazeiny/autoutils-log"
+keywords = ["autoutils_log"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytz = "*"
+termcolor = ">=2.4.0"
+requests = "~=2.32"
+persiantools = "~=4.0"
+aiokafka = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
