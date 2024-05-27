@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "autoutils-log"
-version = "0.1.0"
+version = "0.2.0"
 description = "Some Good Function For Log"
 authors = ["Reza Zeiny <rezazeiny1998@gmail.com>"]
 license = "MIT"
@@ -23,7 +23,7 @@ pytz = "*"
 termcolor = ">=2.4.0"
 requests = "~=2.32"
 persiantools = "~=4.0"
-aiokafka = "^0.10.0"
+confluent-kafka = "~=2.4"
 
 
 [build-system]
