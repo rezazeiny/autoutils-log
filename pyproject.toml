@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "autoutils-log"
-version = "0.2.0"
+version = "0.3.0"
 description = "Some Good Function For Log"
 authors = ["Reza Zeiny <rezazeiny1998@gmail.com>"]
 license = "MIT"
