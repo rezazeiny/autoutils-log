@@ -36,6 +36,7 @@ class KafkaHandler(BaseLogHandler):
         if self.producer is None:
             return
         self.producer.produce(self.topic, json.dumps(send_data).encode("utf-8"), callback=delivery_report)
+        self.producer.poll(timeout=2)
 
     def emit(self, record: logging.LogRecord) -> None:
         if not self.log_server or not self.topic:
