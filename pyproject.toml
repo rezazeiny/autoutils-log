@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "autoutils-log"
-version = "0.4.0"
+version = "0.5.0"
 description = "Some Good Function For Log"
 authors = ["Reza Zeiny <rezazeiny1998@gmail.com>"]
 license = "MIT"
@@ -13,6 +13,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+packages = [
+    { include = "autoutils_log" },
+    { include = "kafka" }
+]
 include = [
     "LICENSE",
 ]
@@ -23,7 +27,6 @@ pytz = "*"
 termcolor = ">=2.4.0"
 requests = "~=2.32"
 persiantools = "~=4.0"
-confluent-kafka = "~=2.4"
 
 
 [build-system]
